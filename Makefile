@@ -59,3 +59,6 @@ uninstall:
   @rm -f $(DESTDIR)$(bindir)/manweb
   @echo -e '   'Deleting file $(green)manweb$(reset) in $(green)$(DESTDIR)$(bindir)/$(reset)$(bold)manweb$(reset)
   @echo -e $(green)Uninstalling DONE$(reset)
+
+update_completion:
+    @$(CURDIR)/autocomplete.sh 
